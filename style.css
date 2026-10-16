@@ -85,32 +85,75 @@ h2 {
 }
 
 /* --- Formulario y Validación UI --- */
-.form-group {
-    margin-bottom: 15px;
+.modern-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    border-radius: 20px;
 }
 
-label {
+.modern-form {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px); /* Safari < 18 solo entiende la versión con prefijo */
+    backdrop-filter: blur(10px);
+    border: 1px solid #0077b6;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.modern-form .form-group {
+    margin-bottom: 25px;
+}
+
+.modern-form label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #03045e;
+    font-weight: 500;
 }
 
-input, textarea, select {
+.modern-form input,
+.modern-form textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    font-size: 0.95rem;
-    transition: var(--transition);
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #0077b6;
+    border-radius: 10px;
+    color: #03045e;
+    font-size: 16px;
+    transition: all 0.3s;
 }
 
-input:focus, textarea:focus, select:focus {
+.modern-form input::placeholder,
+.modern-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.modern-form input:focus,
+.modern-form textarea:focus {
     outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
+.modern-form button {
+    background: linear-gradient(45deg, #03045e, #00b4d8);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modern-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
 /* Clases de control de errores solicitadas en el trabajo */
 input.error, textarea.error {
     border-color: var(--danger-color);
