@@ -83,6 +83,7 @@
         <!-- 3. Tabla de Listado de Citas -->
         <section class="table-section">
             <h2>Listado de Citas Programadas</h2>
+            <button type="button" id="btnVaciarTabla" class="btn-action btn-corporate">Vaciar tabla</button>
             <table id="tablaCitas">
                 <thead>
                     <tr>
@@ -96,7 +97,7 @@
                     </tr>
                 </thead>
                 <tbody id="cuerpoTabla">
-                    <!-- Fila por defecto cuando no haya datos -->
+                    <!-- Este id pertenece a la fila que se muestra cuando no hay datos -->
                     <tr id="filaVacia">
                         <td colspan="7" class="text-center">Dato vacío</td>
                     </tr>

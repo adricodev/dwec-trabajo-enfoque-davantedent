@@ -251,6 +251,14 @@ tr:hover {
     margin-right: 5px;
 }
 
+.btn-corporate {
+    background: linear-gradient(45deg, var(--primary-dark), var(--accent-color));
+}
+
+.btn-corporate:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+}
+
 .btn-edit {
     background-color: #ffb703;
 }
